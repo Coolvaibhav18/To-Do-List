@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TO-Do-List</title>
+  <link rel="stylesheet" href="./Todo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <script src="./To-do.js"></script>
+</head>
+
+<body onload="showitems()">
+  <div class="box">
+    <section id="Section">
+      <div class="head">
+        <!-- <img src="./to_do_list_header_by_nomiru_da1qxus-fullview.png" alt="To-Do-List"> -->
+        <h1>To-Do-List</h1>
+      </div>
+      <div class="container">
+
+        <label for="todoitem"><span>To-do Items:</span></label>
+        <input class="idesign" type="text" placeholder="&nbsp Enter To-Do-Item" class="blank" id="todoitem" /><br>
+
+      
+        <label for="description"><span>Description:</span></label>
+        <input class="idesign" type="text" placeholder="&nbsp Description " class="description" id="description" /><br>
+
+
+
+        <label for="date"><span> Date:</span></label>
+        <input class="idesign" type="date" id="date"><br>
+        <button class="button" id="addOrSave" onclick="additem()">Add Items</button>
+      </div>
+
+      <div class="table1">
+        <table CELLSPACING="0" class="styled-table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>To-Do-Items</th>
+              <th>Description</th>
+              <th>Due Date</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+            
+          </thead>
+          
+          <tbody id="show">
+            <!-- and so on... -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>
